@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "captureConversation") {
-        const chatArea = document.querySelector(".items-center"); // Replace '.chat-selector' with the appropriate selector for the conversation area.
+        const chatArea = document.querySelector("div.items-center.flex-col");
         if (chatArea) {
             const container = document.querySelector(".pr-14");
             let conversationTitle = ""
